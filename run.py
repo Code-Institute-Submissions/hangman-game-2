@@ -11,13 +11,26 @@ counties_of_ireland = ["limerick", "tipperary", "wexford",
 
 category = [weather, irish_names, counties_of_ireland]    
 
+# stages for wrong answer
+stages = ['___________________',
+          '|         |        ',
+          '|         |        ',
+          '|         |        ',
+          '|         0        ',
+          '|        /|＼      ',
+          '|        / ＼      ',
+          '| GAME        OVER!']
+
+# Setting the stage number to be used as limit for incorrect attempts
+stage_num = len(stages)
+
 
 def display_greeting():
     """
     Prompt user to input name and greetings
     """
     print("WELCOME TO")
-    # Title ASCII ART 
+    # Title ASCII ART https://patorjk.com/software/taag
     print(" ▄  █ ██      ▄     ▄▀  █▀▄▀█ ██      ▄")       
     print("█   █ █ █      █  ▄▀    █ █ █ █ █      █")      
     print("██▀▀█ █▄▄█ ██   █ █ ▀▄  █ ▄ █ █▄▄█ ██   █")     
@@ -39,9 +52,9 @@ def display_instructions():
     print("Do you need instructions before starting a game?")
     instruction_on = input("Press y if yes, any other key to play game : \n")
     if instruction_on.lower() == "y":
-         instructions_txt()
-         print("Are you ready to play?")
-         game_start = input("Press Any key to start a game >> \n")
+        instructions_txt()
+        print("Are you ready to play?")
+        game_start = input("Press Any key to start a game >> \n")
     else:
         pass
 
