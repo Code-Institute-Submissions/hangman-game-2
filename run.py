@@ -114,17 +114,17 @@ def select_question():
     else:
         category_item = category[list_num]
         word = random.choice(category_item)
-        return(word)  
+        return(word)
 
 
-def start_hangman():
+def start_game():
     """
     Main game function to display questions, check the answer
     and count attempts.
     Repeats process if game completion condition is not met.
     Either word completion or reaching full stages will end the game.
-    """    
-    incorrect = 0 
+    """
+    incorrect = 0
     correct_guess = set([])
     word = select_question()
     check_answer = word.replace(" ", "")
@@ -135,7 +135,7 @@ def start_hangman():
         """
         Print out _ for the remaining letters to guess
         """
-         for i in word:
+        for i in word:
             if i == " ":
                 print(i, end="  ")
             elif i in correct_guess:
@@ -150,15 +150,14 @@ def start_hangman():
                 time.sleep(2)
             else:
                 print(f"{guessed.upper()} is the right answer!")
-                correct_guess.add(guessed) 
-                word_letters = word.replace(" ", "")  
+                correct_guess.add(guessed)
+                word_letters = word.replace(" ", "")
                 if correct_guess == set(word_letters):
                     print(word.upper())
                     print(f"CONGRATULATIONS! "
                           f"You have guessed the word {word.upper()}. YOU WIN!")
-                    you_win()
                     break
-                time.sleep(2)           
+                time.sleep(2)          
         else:
             if len(guessed) > 1:
                 print("Enter only one letter at a time")
@@ -169,11 +168,11 @@ def start_hangman():
             print("\n".join(stages[:incorrect]))
             print("\n")
             wrong_guess.append(guessed.upper())
-            print(f"Your incorrect guesses: {wrong_guess} ")  
+            print(f"Your incorrect guesses: {wrong_guess} ")
             time.sleep(2)
     if incorrect == stage_num:
         print(f"Answer is {word.upper()}")
-        game_over() 
+        game_over()
 
     time.sleep(3)
     replay()
@@ -187,7 +186,23 @@ def display_guess_message():
 
 def display_alredy_used():
     print("You have already used this letter before,"
-          " it's already displayed!")    
-       
+          " it's already displayed!")
+
+
+def game_over():
+    """
+    GAME OVER ascii art
+    """
+    print(" _____ ____  _      _____   ____  _     _____ ____")
+    print("/  __//  _ \/ \__/|/  __/  /  _ \/ \ |\/  __//  __\ ")
+    print("| |  _| / \|| |\/|||  \    | / \|| | //|  \  |  \/|")
+    print("| |_//| |-||| |  |||  /_   | \_/|| \// |  /_ |    /")
+    print("\____\\_/ \|\_/  \|\____\  \____/\__/  \____\\_/\_\ ")
+
+
+def main():
+    display_greeting()  # greeting function
+    display_instructions()  # display instruction if user chooses
+    start_hangman()
 
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
