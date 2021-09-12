@@ -96,7 +96,28 @@ def category_select():
             else:
                 pass
          except ValueError as e:
-            print("Only number 1, 2, 3 or 4 accepted")        
+            print("Only number 1, 2, 3 or 4 accepted")  
+
+
+def select_question():
+    """
+    Random word selection from the list and display _ for each letter
+    """
+    time.sleep(2)
+    category_chosen = category_select()
+    list_num = category_chosen - 1
+    print(f"Category {category_chosen}  was chosen")
+    if category_chosen == 4:
+        category_item = random.choice(category)
+        word = random.choice(category_item)
+        return(word)
+    else:
+        category_item = category[list_num]
+        word = random.choice(category_item)
+        return(word)  
+
+
+def                        
 
 
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
