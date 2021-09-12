@@ -117,7 +117,7 @@ def select_question():
         return(word)  
 
 
-def hangman():
+def start_hangman():
     """
     Main game function to display questions, check the answer
     and count attempts.
@@ -173,7 +173,21 @@ def hangman():
             time.sleep(2)
     if incorrect == stage_num:
         print(f"Answer is {word.upper()}")
-        game_over()        
+        game_over() 
+
+    time.sleep(3)
+    replay()
+
+
+def display_guess_message():
+    print("\n")
+    print("Can you guess the word?")
+    print("Enter one letter to see are you right?")
+
+
+def display_alredy_used():
+    print("You have already used this letter before,"
+          " it's already displayed!")    
        
 
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
