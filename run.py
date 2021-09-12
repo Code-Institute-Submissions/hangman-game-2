@@ -117,7 +117,63 @@ def select_question():
         return(word)  
 
 
-def                        
+def hangman():
+    """
+    Main game function to display questions, check the answer
+    and count attempts.
+    Repeats process if game completion condition is not met.
+    Either word completion or reaching full stages will end the game.
+    """    
+    incorrect = 0 
+    correct_guess = set([])
+    word = select_question()
+    check_answer = word.replace(" ", "")
+    answers = [i for i in check_answer]
+    wrong_guess = []
+    while incorrect < stage_num:
+        display_guess_message()
+        """
+        Print out _ for the remaining letters to guess
+        """
+         for i in word:
+            if i == " ":
+                print(i, end="  ")
+            elif i in correct_guess:
+                print(i.upper(), end=" ")
+            else:
+                print("_  ", end=" ")
+        print('\n')
+        guessed = input("Only one letter please! \n").lower()   
+        if guessed in answers:
+            if guessed in correct_guess:
+                display_alredy_used()
+                time.sleep(2)
+            else:
+                print(f"{guessed.upper()} is the right answer!")
+                correct_guess.add(guessed) 
+                word_letters = word.replace(" ", "")  
+                if correct_guess == set(word_letters):
+                    print(word.upper())
+                    print(f"CONGRATULATIONS! "
+                          f"You have guessed the word {word.upper()}. YOU WIN!")
+                    you_win()
+                    break
+                time.sleep(2)           
+        else:
+            if len(guessed) > 1:
+                print("Enter only one letter at a time")
+            else:
+                print(f"' {guessed.upper()}' is not in correct answer!")
 
+            incorrect += 1
+            print("\n".join(stages[:incorrect]))
+            print("\n")
+            wrong_guess.append(guessed.upper())
+            print(f"Your incorrect guesses: {wrong_guess} ")  
+            time.sleep(2)
+    if incorrect == stage_num:
+        print(f"Answer is {word.upper()}")
+        game_over()        
+       
 
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
