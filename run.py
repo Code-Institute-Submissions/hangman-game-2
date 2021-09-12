@@ -11,7 +11,7 @@ counties_of_ireland = ["limerick", "tipperary", "wexford",
 
 category = [weather, irish_names, counties_of_ireland]    
 
-# stages for wrong answer
+# stages for wrong answer  https://enhancer298.net/2020/07/10/hangman1
 stages = ['___________________',
           '|         |        ',
           '|         |        ',
@@ -78,7 +78,25 @@ def instructions_txt():
           " the hangman image will progress.\n"
           "7. If the number of incorrect attempts reaches the limit\n"
           "   and hangman image completes, game over!")
-    
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
+
+
+def category_select():
+    """
+    Prompt user to select a category for the game and validate the input
+    """
+    print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")  
+    print("1. Weather, 2. Irish names, 3. Counties of Ireland"
+          "4. All the category mixed\n")
+    category_num = 0
+    while not 1 <= category_num <= 4:
+        try:
+            category_num = int(input("PLEASE ENTER 1, 2, 3 or 4  >>>  \n"))
+            if 1 <= category_num <= 4:
+                return category_num
+            else:
+                pass
+         except ValueError as e:
+            print("Only number 1, 2, 3 or 4 accepted")        
+
+
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
