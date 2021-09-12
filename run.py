@@ -141,7 +141,7 @@ def start_game():
             elif i in correct_guess:
                 print(i.upper(), end=" ")
             else:
-                print("_  ", end=" ")
+                print("_ ", end=" ")
         print('\n')
         guessed = input("Only one letter please! \n").lower()   
         if guessed in answers:
@@ -203,6 +203,9 @@ def game_over():
 def main():
     display_greeting()  # greeting function
     display_instructions()  # display instruction if user chooses
-    start_hangman()
+    start_game()
+
+
+main()    
 
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
