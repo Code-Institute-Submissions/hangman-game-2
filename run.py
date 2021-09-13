@@ -86,7 +86,7 @@ def category_select():
     """
     print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")  
     print("1. Weather, 2. Irish names, 3. Counties of Ireland"
-          "4. All the category mixed\n")
+          " 4. All the category mixed\n")
     category_num = 0
     while not 1 <= category_num <= 4:
         try:
@@ -197,7 +197,7 @@ def game_over():
     print("/  __//  _ \/ \__/|/  __/  /  _ \/ \ |\/  __//  __\ ")
     print("| |  _| / \|| |\/|||  \    | / \|| | //|  \  |  \/|")
     print("| |_//| |-||| |  |||  /_   | \_/|| \// |  /_ |    /")
-    print("\____\\_/ \|\_/  \|\____\  \____/\__/  \____\\_/\_\ ")
+    print("\____\\_/ \|\_/  \|\____\  \____/\__/  \____\\_/\_\\n")
 
 
 def replay():
