@@ -3,7 +3,7 @@ import time
 
 # List for guestion word
 weather = ["climate", "isobar", "visibility",
-           "showery", "unsettled", "reinbow"]
+           "showery", "unsettled", "rainbow"]
 irish_names = ["caoimhe", "saoirse", "clodagh",
                "roisin", "eireann", "padraig"]
 counties_of_ireland = ["limerick", "tipperary", "wexford",
@@ -40,21 +40,22 @@ def display_greeting():
     print("       ▀                       ▀")
 
     name = input("Enter your name:")
-    print("Hello" + name + "Best of luck!")
+    print("Hello:" + name + ",Best of luck!")
     time.sleep(2)
-    print("The game is about to start!\nLet's play Hangman!")
+    print("GET EXCITED!\nLet's play Hangman!")
 
 
 def display_instructions():
     """
     Ask user if instruction is need and displays instruction as requested
     """
-    print("Do you need instructions before starting a game?")
-    instruction_on = input("Press y if yes, any other key to play game : \n")
+    print("Do you want to know the game's rules?")
+    instruction_on = input("Press y if yes,"
+                           "or any other key to play the game:\n")
     if instruction_on.lower() == "y":
         instructions_txt()
         print("Are you ready to play?")
-        game_start = input("Press Any key to start a game >> \n")
+        game_start = input("Press any key to start the game >> \n")
     else:
         pass
 
@@ -75,7 +76,7 @@ def instructions_txt():
           "5. If you guess all the letters and complete the word,\n"
           "   you win the game\n"
           "6. If the incorrect answer is entered,"
-          " the hangman image will progress.\n"
+          "   the hangman image will progress.\n"
           "7. If the number of incorrect attempts reaches the limit\n"
           "   and hangman image completes, game over!")
 
@@ -83,14 +84,14 @@ def instructions_txt():
 def category_select():
     """
     Prompt user to select a category for the game and validate the input
-    """
+    """ 
     print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")  
     print("1. Weather, 2. Irish names, 3. Counties of Ireland"
           " 4. All the category mixed\n")
     category_num = 0
     while not 1 <= category_num <= 4:
         try:
-            category_num = int(input("PLEASE ENTER 1, 2, 3 or 4  >>>  \n"))
+            category_num = int(input("Please enter 1, 2, 3 or 4  >>>  \n"))
             if 1 <= category_num <= 4:
                 return category_num
             else:
@@ -153,16 +154,16 @@ def start_game():
                 correct_guess.add(guessed)
                 word_letters = word.replace(" ", "")
                 if correct_guess == set(word_letters):
-                    print(word.upper())
-                    print(f"CONGRATULATIONS! "
-                          f"You have guessed the word {word.upper()}. YOU WIN!")
+                    print(f"CONGRATULATIONS!"
+                          f"You have guessed the word {word.upper()}."
+                          f"YOU WIN!\n")
                     break
                 time.sleep(2)          
         else:
             if len(guessed) > 1:
                 print("Enter only one letter at a time")
             else:
-                print(f"' {guessed.upper()}' is not in correct answer!")
+                print(f"' {guessed.upper()}' is the incorrect answer!")
 
             incorrect += 1
             print("\n".join(stages[:incorrect]))
@@ -171,7 +172,7 @@ def start_game():
             print(f"Your incorrect guesses: {wrong_guess} ")
             time.sleep(2)
     if incorrect == stage_num:
-        print(f"Answer is {word.upper()}")
+        print(f"The answer is {word.upper()}")
         game_over()
 
     time.sleep(3)
@@ -181,7 +182,7 @@ def start_game():
 def display_guess_message():
     print("\n")
     print("Can you guess the word?")
-    print("Enter one letter to see are you right?")
+    print("Enter one letter to see if you are right?")
 
 
 def display_alredy_used():
@@ -202,7 +203,7 @@ def game_over():
 
 def replay():
     print("Would you like to play again?")
-    print("Enter y or press RUN PROGRAM button above to play again."
+    print("Enter y or press RUN PROGRAM button above to play again.\n"
           "or press any other key to exit the game.")
     play_again = input(
         "Please press y to play, any other key to exit the game \n")
@@ -218,6 +219,4 @@ def main():
     start_game()
 
 
-main()    
-
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+main()
