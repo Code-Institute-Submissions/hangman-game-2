@@ -42,7 +42,7 @@ def display_greeting():
     name = input("Enter your name:")
     print("Hello" + name + "Best of luck!")
     time.sleep(2)
-    print("The game is about to start!\n Let's play Hangman!")
+    print("The game is about to start!\nLet's play Hangman!")
 
 
 def display_instructions():
@@ -95,7 +95,7 @@ def category_select():
                 return category_num
             else:
                 pass
-         except ValueError as e:
+        except ValueError as e:
             print("Only number 1, 2, 3 or 4 accepted")  
 
 
@@ -143,13 +143,13 @@ def start_game():
             else:
                 print("_ ", end=" ")
         print('\n')
-        guessed = input("Only one letter please! \n").lower()   
+        guessed = input("Enter one letter! \n").lower()   
         if guessed in answers:
             if guessed in correct_guess:
                 display_alredy_used()
                 time.sleep(2)
             else:
-                print(f"{guessed.upper()} is the right answer!")
+                print(f"{guessed.upper()} is the right letter!")
                 correct_guess.add(guessed)
                 word_letters = word.replace(" ", "")
                 if correct_guess == set(word_letters):
@@ -198,6 +198,18 @@ def game_over():
     print("| |  _| / \|| |\/|||  \    | / \|| | //|  \  |  \/|")
     print("| |_//| |-||| |  |||  /_   | \_/|| \// |  /_ |    /")
     print("\____\\_/ \|\_/  \|\____\  \____/\__/  \____\\_/\_\ ")
+
+
+def replay():
+    print("Would you like to play again?")
+    print("Enter y or press RUN PROGRAM button above to play again."
+          "or press any other key to exit the game.")
+    play_again = input(
+        "Please press y to play, any other key to exit the game \n")
+    if play_again.lower() == "y":
+        start_game()
+    else:
+        print("Hope you enjoyed the game!")
 
 
 def main():
