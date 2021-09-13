@@ -1,9 +1,43 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# HANGMAN game
 
-Welcome HeleJ,
+Hangman game is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+# How to play
 
+# Features
+
+### Exsisting Features
+
+### Future Features
+
+# Data Model
+
+# Testing
+
+I have manually tested this project by doing the following:
+* Passed the code through a PEP8 linter and confirmed, there are no problems
+* Give invalid inputs strings when numbers are expected, out of bound inputs, some inputs twice
+* Tested in my local terminal and the Code Institute Heroku terminal
+
+## Bugs
+
+### Solved Bugs
+
+## Remaining Bugs
+
+* No bugs remaining
+
+## Validator Testings
+
+* PEP8 http://pep8online.com/checkresult
+    * No errors were returned from PEP8online.com
+
+# Deployment
+
+# Credits
+
+* Code Institute for the deployment terminal
+* 
 ## Reminders
 
 * Your code must be placed in the `run.py` file
