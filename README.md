@@ -1,8 +1,30 @@
 # HANGMAN game
 
-Hangman game is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
+This game ws built as part of the learning material for Code Institute's Fullstack Web Developer program (5P) Portfolio Project.
+
+Hangman is an old school favorite, a word game where the goal is simply to find the missing word or words Python terminal game, which runs in the Code Institute mock terminal on Heroku.
+
+You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
+
+![my-page]() pilt siia sisse
 
 # How to play
+
+* If you know how to play the game you can start game, otherwise you can read about how to play the game.
+
+* You will have to make a choice what category to select
+
+* You will be presented with a number of blank spaces representing the missing letters you need to find.
+
+* Use the keyboard to guess a letter (I recommend starting with vowels).
+
+* If your chosen letter exists in the answer, then all places in the answer where that letter appear will be revealed.
+
+* After you've revealed several letters, you may be able to guess what the answer is and fill bit more easy in the remaining letters.
+
+* Every time you guess a letter wrong you loose a life and the hangman begins to appear, piece by piece.
+
+* To win you need to solve the puzzle before the hangman dies.
 
 # Features
 
@@ -10,7 +32,17 @@ Hangman game is a Python terminal game, which runs in the Code Institute mock te
 
 ### Future Features
 
+* Hangman game is old, old game and the word at current childrens play list can be odd. Taking consideration mental health and suitside issues. So for that reason I would give different visualisation option where you can select build a snowman or melting snowman.
+
 # Data Model
+
+# Technology
+
+*  This game was created with Gitpod, Github and Heroku.
+
+* The Code Institute's GitHub full template for Python is used in order for the program to display properly in the deployed site on Heroku.
+
+* Python 3 - an interpreted high-level general-purpose backend programming language.
 
 # Testing
 
@@ -18,6 +50,7 @@ I have manually tested this project by doing the following:
 * Passed the code through a PEP8 linter and confirmed, there are no problems
 * Give invalid inputs strings when numbers are expected, out of bound inputs, some inputs twice
 * Tested in my local terminal and the Code Institute Heroku terminal
+* https://pythontutor.com/visualize.html#mode=edit
 
 ## Bugs
 
