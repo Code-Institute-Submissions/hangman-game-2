@@ -40,7 +40,7 @@ def display_greeting():
     print("       ▀                       ▀")
 
     name = input("Enter your name:")
-    print("Hello:" + name + ",Best of luck!")
+    print(f"Hello {name.upper()},Best of luck!")
     time.sleep(2)
     print("GET EXCITED!\nLet's play Hangman!")
 
@@ -84,7 +84,7 @@ def instructions_txt():
 def category_select():
     """
     Prompt user to select a category for the game and validate the input
-    """ 
+    """
     print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")  
     print("1. Weather, 2. Irish names, 3. Counties of Ireland"
           " 4. All the category mixed\n")
@@ -118,7 +118,7 @@ def select_question():
         return(word)
 
 
-def start_game():
+def hangman():
     """
     Main game function to display questions, check the answer
     and count attempts.
@@ -206,9 +206,9 @@ def replay():
     print("Enter y or press RUN PROGRAM button above to play again.\n"
           "or press any other key to exit the game.")
     play_again = input(
-        "Please press y to play, any other key to exit the game \n")
+        "Please press y to play, any other key to exit the game\n")
     if play_again.lower() == "y":
-        start_game()
+        hangman()
     else:
         print("Hope you enjoyed the game!")
 
@@ -216,7 +216,7 @@ def replay():
 def main():
     display_greeting()  # greeting function
     display_instructions()  # display instruction if user chooses
-    start_game()
+    hangman()
 
 
 main()

@@ -46,6 +46,9 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
 # Data Model
 
+The flowchart below summarises the data flow in this program.
+![Flowchart]() Pilt sisse
+
 # Technology
 
 *  This game was created with Gitpod, Github and Heroku.
@@ -60,7 +63,7 @@ I have manually tested this project by doing the following:
 * Passed the code through a PEP8 linter and confirmed, there are no problems
 * Give invalid inputs strings when numbers are expected, out of bound inputs, some inputs twice
 * Tested in my local terminal and the Code Institute Heroku terminal
-* https://pythontutor.com/visualize.html#mode=edit
+* [Python tutor](https://pythontutor.com/visualize.html#mode=edit)
 
 ## Bugs
 
