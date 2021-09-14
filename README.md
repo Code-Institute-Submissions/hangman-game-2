@@ -34,6 +34,16 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
 * Hangman game is old, old game and the word at current childrens play list can be odd. Taking consideration mental health and suitside issues. So for that reason I would give different visualisation option where you can select build a snowman or melting snowman.
 
+* more categorys to select
+
+* bigger list of words. Special file to accomodate that.
+
+* for a language lerning purpose was be good to hear this word sound.
+
+* the letters can be displayed for selection
+
+* different difficulty levels 
+
 # Data Model
 
 # Technology
