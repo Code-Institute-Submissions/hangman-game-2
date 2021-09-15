@@ -157,6 +157,7 @@ def hangman():
                 if correct_guess == set(word_letters):
                     print(f"CONGRATULATIONS!"
                           f"You have guessed the word {word.upper()}.")
+                    # ASCII ART https://patorjk.com/software/taag
                     print("██╗  ██╗██╗   ██╗██████╗ ██████╗  █████╗ ██╗   ██╗")
                     print("██║  ██║██║   ██║██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝")
                     print("███████║██║   ██║██████╔╝██████╔╝███████║ ╚████╔╝")
@@ -200,11 +201,12 @@ def game_over():
     """
     GAME OVER ascii art
     """
+    # ASCII ART https://patorjk.com/software/taag
     print(" _____ ____  _      _____   ____  _     _____ ____")
     print("/  __//  _ \/ \__/|/  __/  /  _ \/ \ |\/  __//  __\ ")
     print("| |  _| / \|| |\/|||  \    | / \|| | //|  \  |  \/|")
     print("| |_//| |-||| |  |||  /_   | \_/|| \// |  /_ |    /")
-    print("\____\\_/ \|\_/  \|\____\  \____/\__/  \____\\_/\_\\n")
+    print("\____\\_/ \|\_/  \|\____\  \____/\__/  \____\\_/\_\ ")
 
 
 def replay():
