@@ -8,8 +8,10 @@ irish_names = ["caoimhe", "saoirse", "clodagh",
                "roisin", "eireann", "padraig"]
 counties_of_ireland = ["limerick", "tipperary", "wexford",
                        "donegal", "longford", "galway"]
+drinks = ["tequila", "vermouth", "cognac",
+          "whiskey", "water", "baileys"]
 
-category = [weather, irish_names, counties_of_ireland]
+category = [weather, irish_names, counties_of_ireland, drinks]
 
 # stages for wrong answer  https://enhancer298.net/2020/07/10/hangman1
 stages = ['___________________',
@@ -86,17 +88,17 @@ def category_select():
     """
     print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")
     print("1. Weather, 2. Irish names, 3. Counties of Ireland"
-          " 4. All the category mixed\n")
+          " 4. Drinks, 5. All the category mixed\n")
     category_num = 0
-    while not 1 <= category_num <= 4:
+    while not 1 <= category_num <= 5:
         try:
-            category_num = int(input("Please enter 1, 2, 3 or 4  >>>  \n"))
-            if 1 <= category_num <= 4:
+            category_num = int(input("Please enter 1, 2, 3, 4 or 5  >>>  \n"))
+            if 1 <= category_num <= 5:
                 return category_num
             else:
                 pass
         except ValueError:
-            print("Only number 1, 2, 3 or 4 accepted")
+            print("Only number 1, 2, 3, 4 or 5 accepted")
 
 
 def select_question():
@@ -107,7 +109,7 @@ def select_question():
     category_chosen = category_select()
     list_num = category_chosen - 1
     print(f"Category {category_chosen}  was chosen")
-    if category_chosen == 4:
+    if category_chosen == 5:
         category_item = random.choice(category)
         word = random.choice(category_item)
         return(word)
