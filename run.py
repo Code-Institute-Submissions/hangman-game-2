@@ -7,9 +7,9 @@ weather = ["climate", "isobar", "visibility",
 irish_names = ["caoimhe", "saoirse", "clodagh",
                "roisin", "eireann", "padraig"]
 counties_of_ireland = ["limerick", "tipperary", "wexford",
-                       "donegal", "longford", "galway"]   
+                       "donegal", "longford", "galway"]
 
-category = [weather, irish_names, counties_of_ireland]    
+category = [weather, irish_names, counties_of_ireland]
 
 # stages for wrong answer  https://enhancer298.net/2020/07/10/hangman1
 stages = ['___________________',
@@ -31,13 +31,12 @@ def display_greeting():
     """
     print("WELCOME TO")
     # Title ASCII ART https://patorjk.com/software/taag
-    print(" ▄  █ ██      ▄     ▄▀  █▀▄▀█ ██      ▄")       
-    print("█   █ █ █      █  ▄▀    █ █ █ █ █      █")      
-    print("██▀▀█ █▄▄█ ██   █ █ ▀▄  █ ▄ █ █▄▄█ ██   █")     
-    print("█   █ █  █ █ █  █ █   █ █   █ █  █ █ █  █")    
-    print("   █     █ █  █ █  ███     █     █ █  █ █")     
-    print("  ▀     █  █   ██         ▀     █  █   ██")    
-    print("       ▀                       ▀")
+    print(" ▄  █ ██      ▄     ▄▀  █▀▄▀█ ██      ▄")
+    print("█   █ █ █      █  ▄▀    █ █ █ █ █      █")
+    print("██▀▀█ █▄▄█ ██   █ █ ▀▄  █ ▄ █ █▄▄█ ██   █")
+    print("█   █ █  █ █ █  █ █   █ █   █ █  █ █ █  █")
+    print("   █     █ █  █ █  ███     █     █ █  █ █")
+    print("  ▀     █  █   ██         ▀     █  █   ██")
 
     name = input("Enter your name:")
     print(f"Hello {name.upper()},Best of luck!")
@@ -55,7 +54,7 @@ def display_instructions():
     if instruction_on.lower() == "y":
         instructions_txt()
         print("Are you ready to play?")
-        game_start = input("Press any key to start the game >> \n")
+        input("Press any key to start the game >> \n")
     else:
         pass
 
@@ -85,7 +84,7 @@ def category_select():
     """
     Prompt user to select a category for the game and validate the input
     """
-    print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")  
+    print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")
     print("1. Weather, 2. Irish names, 3. Counties of Ireland"
           " 4. All the category mixed\n")
     category_num = 0
@@ -96,8 +95,8 @@ def category_select():
                 return category_num
             else:
                 pass
-        except ValueError as e:
-            print("Only number 1, 2, 3 or 4 accepted")  
+        except ValueError:
+            print("Only number 1, 2, 3 or 4 accepted")
 
 
 def select_question():
@@ -144,7 +143,7 @@ def hangman():
             else:
                 print("_ ", end=" ")
         print('\n')
-        guessed = input("Enter one letter! \n").lower()   
+        guessed = input("Enter one letter! \n").lower()
         if guessed in answers:
             if guessed in correct_guess:
                 display_alredy_used()
@@ -158,7 +157,7 @@ def hangman():
                           f"You have guessed the word {word.upper()}."
                           f"YOU WIN!\n")
                     break
-                time.sleep(2)          
+                time.sleep(2)
         else:
             if len(guessed) > 1:
                 print("Enter only one letter at a time")
