@@ -87,8 +87,8 @@ def category_select():
     Prompt user to select a category for the game and validate the input
     """
     print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")
-    print("1. Weather, 2. Irish names, 3. Counties of Ireland"
-          " 4. Drinks, 5. All the category mixed\n")
+    print("1. Weather, 2. Irish names, 3. Counties of Ireland", "4. Drinks\n",
+          "5. All the category mixed\n")
     category_num = 0
     while not 1 <= category_num <= 5:
         try:
@@ -156,8 +156,13 @@ def hangman():
                 word_letters = word.replace(" ", "")
                 if correct_guess == set(word_letters):
                     print(f"CONGRATULATIONS!"
-                          f"You have guessed the word {word.upper()}."
-                          f"YOU WIN!\n")
+                          f"You have guessed the word {word.upper()}.")
+                    print("██╗  ██╗██╗   ██╗██████╗ ██████╗  █████╗ ██╗   ██╗")
+                    print("██║  ██║██║   ██║██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝")
+                    print("███████║██║   ██║██████╔╝██████╔╝███████║ ╚████╔╝")
+                    print("██╔══██║██║   ██║██╔══██╗██╔══██╗██╔══██║  ╚██╔╝")
+                    print("██║  ██║╚██████╔╝██║  ██║██║  ██║██║  ██║   ██║")
+                    print("╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝\n")
                     break
                 time.sleep(2)
         else:
