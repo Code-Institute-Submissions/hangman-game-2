@@ -19,7 +19,7 @@ stages = ['___________________',
           '|         0        ',
           '|        /|＼      ',
           '|        / ＼      ',
-          '| GAME        OVER!']
+          '|      THE END     ']
 
 # Setting the stage number to be used as limit for incorrect attempts
 stage_num = len(stages)
@@ -39,31 +39,31 @@ def display_greeting():
     print("  ▀     █  █   ██         ▀     █  █   ██")
 
     name = input("Enter your name:")
-    print(f"Hello {name.upper()},Best of luck!")
+    print(f"Hello {name.upper()}, Best of luck!")
     time.sleep(2)
     print("GET EXCITED!\nLet's play Hangman!")
 
 
-def display_instructions():
+def display_rules():
     """
-    Ask user if instruction is need and displays instruction as requested
+    Ask user if game rules is need and displays game rules as requested
     """
     print("Do you want to know the game's rules?")
-    instruction_on = input("Press y if yes,"
-                           "or any other key to play the game:\n")
-    if instruction_on.lower() == "y":
-        instructions_txt()
+    rules_on = input("Press y if yes,"
+                     "or any other key to play the game:\n")
+    if rules_on.lower() == "y":
+        rules_txt()
         print("Are you ready to play?")
         input("Press any key to start the game >> \n")
     else:
         pass
 
 
-def instructions_txt():
+def rules_txt():
     """
-    Display instructions
+    Display game rules
     """
-    print("Here is instruction on how to play \n"
+    print("Here are rules on how to play \n"
           "1. Choose a category\n"
           "2. The same number of Underscores '_' will be displayed \n"
           "   as letters in the word.\n"
@@ -214,7 +214,7 @@ def replay():
 
 def main():
     display_greeting()  # greeting function
-    display_instructions()  # display instruction if user chooses
+    display_rules()  # display instruction if user chooses
     hangman()
 
 
