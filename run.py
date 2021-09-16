@@ -66,20 +66,21 @@ def rules_txt():
     Display game rules
     """
     print("Here are rules on how to play \n"
-          "1. Choose a category\n"
-          "2. The same number of Underscores '_' will be displayed \n"
-          "   as letters in the word.\n"
-          "3. Guess the word\n"
-          "   Only one alphabet key should be entered at each time.\n"
-          "   Space between the words is considered incorrect.\n"
+          "1. Select a category\n"
+          "2. The amount of  displayed Underscores '_' hints\n"
+          "   to the lenght of the word.\n"
+          "3. You need to guess the word\n"
+          "   by entering one letter at a time.\n"
           "4. If your answer is correct, the letter will be displayed\n"
           "   instead of the underscore'_'.\n"
-          "5. If you guess all the letters and complete the word,\n"
+          "5. If you guess all the letters and the word is complete,\n"
           "   you win the game\n"
-          "6. If the incorrect answer is entered,"
+          "6. If the incorrect letter is entered,\n"
           "   the hangman image will progress.\n"
+          "   Space between the words is considered incorrect.\n"
           "7. If the number of incorrect attempts reaches the limit\n"
-          "   and hangman image completes, game over!")
+          "   and the hangman image completed the game ends.\n"
+          "8. Dont lose hope and try again!\n")
 
 
 def category_select():
