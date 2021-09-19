@@ -203,7 +203,7 @@ This project was deployed using Code Institute's mock terminal for Heroku. Pleas
    * in this new window - click Python and "Save changes" [`heroku/Python`]
    * click "Add build pack" again
    * in this new window - click Node.js and "Save changes" [`heroku/NodeJS`]
-   * take care to have those apps in this order: Python first, Node.js second, drag and drop if needed
+   * take care to have those apps in this order: [`Python`] first, [`Node.js`] second, drag and drop if needed
 
 ![buildpacks](controllers/assets/images/buildpacks.png)
 
@@ -220,12 +220,19 @@ This project was deployed using Code Institute's mock terminal for Heroku. Pleas
 16. Scroll down to the section "Automatic Deploys"
 
 17. Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
+   * As I wanted to have control when to deploy the version, I have chosen manual deployment by pressing Deploy branch button instead of Enable Automatic Deploys
+
+![deployment](controllers/assets/images/manual-deployment.png)   
 
 18. Click "Deploy branch"
 
 Once the program runs: you should see the message "the app was sussesfully deployed"
 
- 19. Click the button "View"
+![deployed](controllers/assets/images/heroku-app.png)
+
+ 19. Click the button "View". This View button will open the terminal game in the new window. Here is the deployed page [Hangman](https://hangman-game1x.herokuapp.com/)
+
+ 20. As manual deployment was chosen, I had to come back to Heroku deployment page whenever I have an updated working version pushed into the GitHub page.
 
 # Forking the GitHub repository
 
@@ -257,19 +264,12 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 * Idea for [flowchart](http://inventwithpython.com/invent4thed/chapter7.html)
 
-* Code Institute - John from Tutor Support
+* John at CI Tutor support for his patience and pointing me into the right direction.
 
-* Code Institute - Kasia, our group leader. Amazing teacher, who gives more than 100% to get us true. Thanks to her Im still studding in this course. Thanks to her Im finishing my third project.
+* Kasia at CI, our group leader. Amazing teacher, who gives more than 100% to get us true. Thanks to her Im still studding in this course. Thanks to her Im finishing my third project.
 
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
 If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
@@ -279,5 +279,3 @@ Connect your GitHub repository and deploy as normal.
 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
------
-Happy coding!
