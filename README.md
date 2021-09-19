@@ -79,7 +79,21 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
       * def game_over()
       * def replay()
 
-## IMAGES   
+### IMAGES   
+
+Are greated using [ASCII art](http://patorjk.com/software/taag)
+
+![hangman greeting](controllers/assets/images/hangman-image.png)
+
+![hurray](controllers/assets/images/hurray-image.png)
+
+![game over](controllers/assets/images/game-over-image.png)
+
+Visual [hangman stages](https://enhancer298.net/2020/07/10/hangman1/)
+
+![hangman stages](controllers/assets/images/hangman.png)
+
+
 
 ### Future Features
 
@@ -160,11 +174,7 @@ I have manually tested this project by doing the following:
 
 * Code Institute for the deployment terminal
 * 
-## Reminders
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
 ## Creating the Heroku app
 
