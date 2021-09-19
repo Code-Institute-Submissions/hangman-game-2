@@ -61,12 +61,25 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
       the letter will be displayed insted of "_" underscore
    * if player enetering the letter what is not in the word, hangman image starts 
       develop
+   * player getting note when doubble selected the same letter  
       * def select_question()   
       * def hangman()
       * def display_guess_message()
       * def display_alredy_used()
 
-![]      
+![hurray](controllers/assets/images/heroku-end-winning.png)   
+
+   * If user quessed all letters, display ASCII image - Hurray!  
+      * def hangman()
+
+![game over](controllers/assets/images/game-over.png)  
+   * end of game displac image ASCII art 
+   * ask from player whould he likes to play again or exit game using keybord or Run Programm button above
+   * user input what joice he made  
+      * def game_over()
+      * def replay()
+
+## IMAGES   
 
 ### Future Features
 
