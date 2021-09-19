@@ -111,8 +111,9 @@ Visual [hangman stages](https://enhancer298.net/2020/07/10/hangman1/)
 
 # Data Model
 
-The flowchart below summarises the data flow in this program.
-![Flowchart](controllers/assets/) Pilt sisse
+This is the flowchart made during the planning stage of the project. This flowchart has been used to visualise the functions and behaviour control during the building stage of the project.
+
+![Flowchart](controllers/assets/images/hangman-flowchart.jpeg)
 
 # Technology
 
