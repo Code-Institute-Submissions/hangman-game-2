@@ -170,31 +170,31 @@ I have manually tested this project by doing the following:
 
 # Deployment
 
-This project was deployed using Code Institute's mock terminal for Heroku.
+This project was deployed using Code Institute's mock terminal for Heroku. Please follow the below steps.
 
-1. Fork or clone this repository
+## Deployment steps
 
-2. Git add and git commit the changes made
+1. Git add and git commit the changes made
 
-3. Log into [Heroku](https://id.heroku.com/login) or create a new account and log in
+2. Log into [Heroku](https://id.heroku.com/login) or create a new account and log in
 
-4. top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
+3. top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
 
-5. Write app name - it has to be unique, it cannot be the same as this app
+4. Write app name - it has to be unique, it cannot be the same as this app
 
-6. Choose Region - I am in Europe
+5. Choose Region - I am in Europe
 
-7. Click "Create App" The page of your project opens.
+6. Click "Create App" The page of your project opens.
 
-8.  Choose "settings" from the menu on the top of the page
+7.  Choose "settings" from the menu on the top of the page
 
-9. Go to section "Config Vars" and click button "Reveal Config Vars"
+8. Go to section "Config Vars" and click button "Reveal Config Vars"
 
 ![config vars](controllers/assets/images/config-vars.png)
 
-10. In the field for "KEY" enter "PORT"-  capital letters and value"8000" 
+9. In the field for "KEY" enter "PORT"-  capital letters and value"8000" 
 
-11. Go to section "Build packs" and click "Add build pack"
+10. Go to section "Build packs" and click "Add build pack"
 
    * in this new window - click Python and "Save changes" [`heroku/Python`]
    * click "Add build pack" again
@@ -203,25 +203,47 @@ This project was deployed using Code Institute's mock terminal for Heroku.
 
 ![buildpacks](controllers/assets/images/buildpacks.png)
 
-12. Next go to "Deploy" in the menu bar on the top
+11. Next go to "Deploy" in the menu bar on the top
 
-13. Go to section "deployment method", choose "GitHub"
+12. Go to section "deployment method", choose "GitHub"
 
-14. New section will appear "Connect to GitHub" - Search for the repository to connect to
+13. New section will appear "Connect to GitHub" - Search for the repository to connect to
 
-15. type the name of your repository and click "search"
+14. type the name of your repository and click "search"
 
-16. once Heroku finds your repository - click "connect"
+15. once Heroku finds your repository - click "connect"
 
-17. Scroll down to the section "Automatic Deploys"
+16. Scroll down to the section "Automatic Deploys"
 
-18. Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
+17. Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
 
-19. Click "Deploy branch"
+18. Click "Deploy branch"
 
 Once the program runs: you should see the message "the app was sussesfully deployed"
 
- 20. Click the button "View"
+ 19. Click the button "View"
+
+# Forking the GitHub repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+
+1. Log into [GitHub](https://github.com/) or [create an account](https://github.com/).
+
+2. Locate the GitHub repository. Link can be found [here](https://github.com/HeleJ/hangman-game).
+
+3. At the top of the repository, on the right side of the page, select "Fork".
+
+4. You should now have a copy of the original repository in your GitHub account.
+
+# Making a local clone
+
+1. Locate the GitHub repository. Link can be found [here](https://github.com/HeleJ/hangman-game).
+
+2. Next to the green Gitpod button you will see a button "code" with an arrow pointing down
+
+3. You are given the option to open with GitHub desktop or download zip
+
+4. You can also copy https full link, go to git bash and write git clone and paste the full link
 
 # Credits
 
