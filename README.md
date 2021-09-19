@@ -51,9 +51,19 @@ The flowchart below summarises the data flow in this program.
 
 # Technology
 
-*  This game was created with Gitpod, Github and Heroku.
+*  This game was created with:
+
+    * [Gitpod](https://www.gitpod.io/) used to develop project and organise version control 
+
+    * [Github](https://github.com) used to host repository
+       
+    * [Heroku](https://id.heroku.com/login) used for app deployment from Github
 
 * The Code Institute's GitHub full template for Python is used in order for the program to display properly in the deployed site on Heroku.
+
+* [random](https://docs.python.org/3/library/random.html) to randomize anagram
+
+* [time](https://docs.python.org/3/library/time.html) to slow down printed statements
 
 * Python 3 - an interpreted high-level general-purpose backend programming language.
 
