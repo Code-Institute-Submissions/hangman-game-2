@@ -170,6 +170,59 @@ I have manually tested this project by doing the following:
 
 # Deployment
 
+This project was deployed using Code Institute's mock terminal for Heroku.
+
+1. Fork or clone this repository
+
+2. Git add and git commit the changes made
+
+3. Log into [Heroku](https://id.heroku.com/login) or create a new account and log in
+
+4. top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
+
+5. Write app name - it has to be unique, it cannot be the same as this app
+
+6. Choose Region - I am in Europe
+
+7. Click "Create App" The page of your project opens.
+
+8.  Choose "settings" from the menu on the top of the page
+
+9. Go to section "Config Vars" and click button "Reveal Config Vars"
+
+![config vars](controllers/assets/images/config-vars.png)
+
+10. In the field for "KEY" enter "PORT"-  capital letters and value"8000" 
+
+11. Go to section "Build packs" and click "Add build pack"
+
+   * in this new window - click Python and "Save changes" [`heroku/Python`]
+   * click "Add build pack" again
+   * in this new window - click Node.js and "Save changes" [`heroku/NodeJS`]
+   * take care to have those apps in this order: Python first, Node.js second, drag and drop if needed
+
+![buildpacks](controllers/assets/images/buildpacks.png)
+
+12. Next go to "Deploy" in the menu bar on the top
+
+13. Go to section "deployment method", choose "GitHub"
+
+14. New section will appear "Connect to GitHub" - Search for the repository to connect to
+
+15. type the name of your repository and click "search"
+
+16. once Heroku finds your repository - click "connect"
+
+17. Scroll down to the section "Automatic Deploys"
+
+18. Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
+
+19. Click "Deploy branch"
+
+Once the program runs: you should see the message "the app was sussesfully deployed"
+
+ 20. Click the button "View"
+
 # Credits
 
 * Code Institute for the deployment terminal
