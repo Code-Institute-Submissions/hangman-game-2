@@ -166,14 +166,21 @@ I have manually tested this project by doing the following:
 * [PEP8](http://pep8online.com/checkresult)
     * No errors were returned from PEP8online.com
 
-![pep8](controllers/assets/pep8online.png)    
+![pep8](controllers/assets/images/pep8online.png)    
 
 # Deployment
 
 # Credits
 
 * Code Institute for the deployment terminal
-* 
+
+* To greate game I got help [from](http://inventwithpython.com/invent4thed/chapter8.html)
+
+* Idea for [flowchart](http://inventwithpython.com/invent4thed/chapter7.html)
+
+* Code Institute - John from Tutor Support
+
+* Code Institute - Kasia, our group leader. Amazing teacher, who gives more than 100% to get us true. Thanks to her Im still studding in this course. Thanks to her Im finishing my third project.
 
 
 ## Creating the Heroku app
