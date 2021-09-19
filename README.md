@@ -122,7 +122,11 @@ The flowchart below summarises the data flow in this program.
 
     * [Github](https://github.com) used to host repository
        
-    * [Heroku](https://id.heroku.com/login) used for app deployment from Github
+    * [Heroku](https://id.heroku.com/login) used to deploy my application
+
+* [Lucid](https://lucid.app/users/login#/login) used to create the flowchart for the project.
+
+* [Grammarly](https://app.grammarly.com/) used to fix the thousands of grammar errors across the project.
 
 * The Code Institute's GitHub full template for Python is used in order for the program to display properly in the deployed site on Heroku.
 
