@@ -79,8 +79,7 @@ def rules_txt():
           "   the hangman image will progress.\n"
           "   Space between the words is considered incorrect.\n"
           "7. If the number of incorrect attempts reaches the limit\n"
-          "   and the hangman image completed the game ends.\n"
-          "8. Dont lose hope and try again!\n")
+          "   and the hangman image completed the game ends.\n")
 
 
 def category_select():

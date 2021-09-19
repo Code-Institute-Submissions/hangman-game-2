@@ -2,11 +2,13 @@
 
 This game ws built as part of the learning material for Code Institute's Fullstack Web Developer program (5P) Portfolio Project.
 
+Portfolio Project Three: Python - Code Institute - Deadline 24th September 2021
+
 Hangman is an old school favorite, a word game where the goal is simply to find the missing word or words Python terminal game, which runs in the Code Institute mock terminal on Heroku.
 
 You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
-![my-page](controllers/assets/my-app-image.png)
+![my-page](controllers/assets/images/my-app-image.png)
 
 # How to play
 
@@ -28,7 +30,43 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
 # Features
 
-### Exsisting Features
+### Exsisting Features (with functions)
+
+![game start](controllers/assets/images/heroku-start-game.png)
+
+![game-start](controllers/assets/images/heroku-start-welcome.png)
+
+   * Display greeting , ASCKII art, user input for name 
+      * def display_greeting()
+
+![game rules](controllers/assets/images/game-rules.png)
+ 
+   * Ask the player either display the rules or go for game
+      * def display_rules()
+   * Display rules
+      * def rules_txt()
+
+![game categories](controllers/assets/images/heroku-category.png)
+
+   * Display categories
+   * User input for selecting category  
+      * def category_select()
+
+![letters joice](controllers/assets/images/heroku-incorrect-right-letter.png)
+
+![end image](controllers/assets/images/heroku-end-lost.png)
+
+   * Ask the player to enter letters one at the time
+   * if player entered letter what is right for randomly selected word,
+      the letter will be displayed insted of "_" underscore
+   * if player enetering the letter what is not in the word, hangman image starts 
+      develop
+      * def select_question()   
+      * def hangman()
+      * def display_guess_message()
+      * def display_alredy_used()
+
+![]      
 
 ### Future Features
 
@@ -69,13 +107,24 @@ The flowchart below summarises the data flow in this program.
 
 # Testing
 
-I have manually tested this project by doing the following:
-* Passed the code through a PEP8 linter and confirmed, there are no problems
+I have manually tested this project by doing the following: 
+* Passed the code through a PEP8 linter and confirmed, there are no problems (find under validator testing)
 * Give invalid inputs strings when numbers are expected, out of bound inputs, some inputs twice
+
+![only numbers](controllers/assets/images/only-numbers.png)
+
+* Tested ASCII art printout
+
+![ascii](controllers/assets/images/test-greeting-print.png)
+
 * Tested in my local terminal and the Code Institute Heroku terminal
 * [Python tutor](https://pythontutor.com/visualize.html#mode=edit)
 
-![python-tutor](controllers/assets/pythontutor-image.png)
+![python-tutor](controllers/assets/images/pythontutor-image.png)
+
+* lighthouse
+
+![lighthouse](controllers/assets/images/lighthouse-hangman.png)
 
 ## Bugs
 
