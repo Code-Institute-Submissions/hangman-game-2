@@ -10,6 +10,28 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
 ![my-page](controllers/assets/images/my-app-image.png)
 
+
+# Table of Contents
+
+* How to play
+
+* Features
+   * images
+   * future features
+
+* Data model
+
+* Technology
+
+* Testing
+   * Bugs
+   * Validator testing
+
+* Deployment
+
+* Credits
+
+
 # How to play
 
 * If you know how to play the game you can start the game, otherwise you can read about how to play the game.
@@ -79,6 +101,7 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
       * def game_over()
       * def replay()
 
+
 ### IMAGES   
 
 Are created by using [ASCII art](http://patorjk.com/software/taag)
@@ -97,6 +120,7 @@ Visual [hangman stages](https://enhancer298.net/2020/07/10/hangman1/)
 
 ### Future Features
 
+
 * The hangman game is an old, old game and seeing the games title as a childrens game can be odd. Taking into consideration mental health and suitside issues. So for that reason I would like to give different visualisation options where you can select build a snowman or melting snowman.
 
 * more categorys to select
@@ -109,6 +133,7 @@ Visual [hangman stages](https://enhancer298.net/2020/07/10/hangman1/)
 
 * different difficulty levels 
 
+
 # Data Model
 
 This is the flowchart made during the planning stage of the project. This flowchart has been used to visualise the functions and behaviour control during the building stage of the project.
@@ -120,6 +145,7 @@ This is the flowchart made during the planning stage of the project. This flowch
 
 
 # Technology
+
 
 *  This game was created with:
 
@@ -142,6 +168,7 @@ This is the flowchart made during the planning stage of the project. This flowch
 * Python 3 - an interpreted high-level general-purpose backend programming language.
 
 # Testing
+
 
 I have manually tested this project by doing the following: 
 * Passed the code through a PEP8 linter and confirmed, there are no problems (find under validator testing)
@@ -190,6 +217,7 @@ I have manually tested this project by doing the following:
 </details>   
 
 # Deployment
+
 
 This project was deployed using Code Institute's mock terminal for Heroku. Please follow the below steps.
 
