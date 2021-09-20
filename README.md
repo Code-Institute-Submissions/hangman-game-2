@@ -12,19 +12,19 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
 # How to play
 
-* If you know how to play the game you can start game, otherwise you can read about how to play the game.
+* If you know how to play the game you can start the game, otherwise you can read about how to play the game.
 
-* You will have to make a choice what category to select
+* You will have to make a choice on which category to select
 
 * You will be presented with a number of blank spaces representing the missing letters you need to find.
 
 * Use the keyboard to guess a letter (I recommend starting with vowels).
 
-* If your chosen letter exists in the answer, then all places in the answer where that letter appear will be revealed.
+* If your chosen letter exists in the answer, then all places in the answer where that letter appears will be revealed.
 
-* After you've revealed several letters, you may be able to guess what the answer is and fill bit more easy in the remaining letters.
+* After you've revealed several letters, you may be able to guess what the answer is and fill in the remaining letters.
 
-* Every time you guess a letter wrong you loose a life and the hangman begins to appear, piece by piece.
+* Every time you guess a letter wrong you lose a life and the hangman begins to appear, piece by piece.
 
 * To win you need to solve the puzzle before the hangman dies.
 
@@ -57,11 +57,11 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 ![end image](controllers/assets/images/heroku-end-lost.png)
 
    * Ask the player to enter letters one at the time
-   * if player entered letter what is right for randomly selected word,
-      the letter will be displayed insted of "_" underscore
-   * if player enetering the letter what is not in the word, hangman image starts 
+   * if the player entered a letter which is right for the randomly selected word,
+      the letter will be displayed instead of "_" underscore
+   * if the player enters a letter which is not in the word, the hangman image starts to 
       develop
-   * player getting note when doubble selected the same letter  
+   * the player gets a note when double selected the same letter  
       * def select_question()   
       * def hangman()
       * def display_guess_message()
@@ -69,19 +69,19 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
 ![hurray](controllers/assets/images/heroku-end-winning.png)   
 
-   * If user quessed all letters, display ASCII image - Hurray!  
+   * If user guessed all letters, display ASCII image - Hurray!  
       * def hangman()
 
 ![game over](controllers/assets/images/game-over.png)  
-   * end of game displac image ASCII art 
-   * ask from player whould he likes to play again or exit game using keybord or Run Programm button above
-   * user input what joice he made  
+   * end of game display image ASCII art 
+   * ask the player would he like to play again or exit the game using keybord or Run Programm button above
+   * user input what choice he made  
       * def game_over()
       * def replay()
 
 ### IMAGES   
 
-Are greated using [ASCII art](http://patorjk.com/software/taag)
+Are created by using [ASCII art](http://patorjk.com/software/taag)
 
 ![hangman greeting](controllers/assets/images/hangman-image.png)
 
@@ -97,13 +97,13 @@ Visual [hangman stages](https://enhancer298.net/2020/07/10/hangman1/)
 
 ### Future Features
 
-* Hangman game is old, old game and the word at current childrens play list can be odd. Taking consideration mental health and suitside issues. So for that reason I would give different visualisation option where you can select build a snowman or melting snowman.
+* The hangman game is an old, old game and seeing the games title as a childrens game can be odd. Taking into consideration mental health and suitside issues. So for that reason I would like to give different visualisation options where you can select build a snowman or melting snowman.
 
 * more categorys to select
 
 * bigger list of words. Special file to accomodate that.
 
-* for a language lerning purpose was be good to hear this word sound.
+* for a language learning purpose iy would be good to hear the words sound.
 
 * the letters can be displayed for selection
 
@@ -289,13 +289,13 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 * Code Institute for the deployment terminal
 
-* To greate game I got help [from](http://inventwithpython.com/invent4thed/chapter8.html)
+* To create the game I got help [from](http://inventwithpython.com/invent4thed/chapter8.html)
 
 * Idea for [flowchart](http://inventwithpython.com/invent4thed/chapter7.html)
 
 * John at CI Tutor support for his patience and pointing me into the right direction.
 
-* Kasia at CI, our group leader. Amazing teacher, who gives more than 100% to get us true. Thanks to her Im still studding in this course. Thanks to her Im finishing my third project.
+* Kasia at CI, our group leader. Amazing teacher, who gives more than 100% to get us true. Thanks to her Im still studying in this course. Thanks to her Im finishing my third project.
 
 
 
