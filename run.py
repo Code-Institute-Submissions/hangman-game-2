@@ -1,7 +1,7 @@
 import random
 import time
 
-# List for guestion word
+# List for guessing word
 weather = ["climate", "isobar", "visibility",
            "showery", "unsettled", "rainbow"]
 irish_names = ["caoimhe", "saoirse", "clodagh",
@@ -41,7 +41,10 @@ def display_greeting():
     print("  ▀     █  █   ██         ▀     █  █   ██")
 
     name = input("Enter your name:")
-    print(f"Hello {name.upper()}, Best of luck!")
+    if name:
+        print(f"Hello {name.upper()}, Best of luck!")
+    else:
+        print("Hello Guest, Best of luck!")
     time.sleep(2)
     print("GET EXCITED!\nLet's play Hangman!")
 
@@ -111,8 +114,6 @@ def select_question():
     print(f"Category {category_chosen}  was chosen")
     if category_chosen == 5:
         category_item = random.choice(category)
-        word = random.choice(category_item)
-        return(word)
     else:
         category_item = category[list_num]
         word = random.choice(category_item)
@@ -126,12 +127,12 @@ def hangman():
     Repeats process if game completion condition is not met.
     Either word completion or reaching full stages will end the game.
     """
-    incorrect = 0
-    correct_guess = set([])
-    word = select_question()
-    check_answer = word.replace(" ", "")
-    answers = [i for i in check_answer]
-    wrong_guess = []
+    incorrect = 0   # Setting the starting point of incorrect attempts
+    correct_guess = set([])   # Creating a empty list to store correct answers
+    word = select_question()   # Random word chosen by the function
+    check_answer = word.replace(" ", "")   # Removing space from answer
+    answers = [i for i in check_answer]   # Create list from the word
+    wrong_guess = []   # Incorrect letters goes in here
     while incorrect < stage_num:
         display_guess_message()
         """
@@ -146,13 +147,13 @@ def hangman():
                 print("_ ", end=" ")
         print('\n')
         guessed = input("Enter one letter! \n").lower()
-        if guessed in answers:
+        if guessed in answers:   # Checking the answer and determine the action
             if guessed in correct_guess:
                 display_alredy_used()
                 time.sleep(2)
             else:
                 print(f"{guessed.upper()} is the right letter!")
-                correct_guess.add(guessed)
+                correct_guess.add(guessed)   # Add correct letter to the list
                 word_letters = word.replace(" ", "")
                 if correct_guess == set(word_letters):
                     print(f"CONGRATULATIONS!"
@@ -172,8 +173,8 @@ def hangman():
             else:
                 print(f"' {guessed.upper()}' is the incorrect answer!")
 
-            incorrect += 1
-            print("\n".join(stages[:incorrect]))
+            incorrect += 1   # Increment incorrect attempt
+            print("\n".join(stages[:incorrect]))   # Display hangman image
             print("\n")
             wrong_guess.append(guessed.upper())
             print(f"Your incorrect guesses: {wrong_guess} ")
@@ -206,7 +207,7 @@ def game_over():
     print("  / _ \__ _ _ __ ___   ___    _____   _____ _ __")
     print(" / /_\/ _` | '_ ` _ \ / _ \  / _ \ \ / / _ \ '__|")
     print("/ /_\\ (_| | | | | | |  __/ | (_) \ V /  __/ |")
-    print("\____/\__,_|_| |_| |_|\___|  \___/ \_/ \___|_|\n")
+    print("\____/\__,_|_| |_| |_|\___|  \___/ \_/ \___|_| \_\n")
 
 
 def replay():
@@ -223,8 +224,8 @@ def replay():
 
 def main():
     display_greeting()  # greeting function
-    display_rules()  # display instruction if user chooses
-    hangman()
+    display_rules()  # display rules if user chooses
+    hangman()  # main game function
 
 
 main()
