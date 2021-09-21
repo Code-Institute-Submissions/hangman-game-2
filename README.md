@@ -199,8 +199,31 @@ I have manually tested this project by doing the following:
 
 ## Bugs
 
-
 ### Solved Bugs
+
+
+* Heroku, the deployment terminal was set to 80 colums and 24 rows.
+
+At first I was just writing lines and after error showing fixed line lenght.
+
+* ASCII art gave lots of white space, what needed to be fixed by deleting them. 
+
+I selected for every image different font. Block element font was easy to fix.
+
+Image "Game over" is created using line art and it was impossible to solve 
+* errors
+   * flake8(W605)
+   * plynt(anomalous-blacklash-in-string)
+
+* I used manual deployment to get to know more deployment process for study purpose.
+
+I forgot fresh deployment when I asked someone to play and they reflected things
+what I already fixed or changed.So time by time I was confused why in gitpod terminal 
+evrything works well but not in Heroku. Im glad I chosed manual deployment. 
+
+* I used + name + for print out greeting and name but it didnt separate "name" from rest of the text.
+   * used print(f"Hello {name.upper()}, Best of luck!") gave me result what I wanted.
+
 
 ## Remaining Bugs
 
@@ -324,15 +347,4 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 * John at CI Tutor support for his patience and pointing me into the right direction.
 
 * Kasia at CI, our group leader. Amazing teacher, who gives more than 100% to get us true. Thanks to her Im still studying in this course. Thanks to her Im finishing my third project.
-
-
-
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
