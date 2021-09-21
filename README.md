@@ -224,6 +224,12 @@ evrything works well but not in Heroku. Im glad I chosed manual deployment.
 * I used + name + for print out greeting and name but it didnt separate "name" from rest of the text.
    * used print(f"Hello {name.upper()}, Best of luck!") gave me result what I wanted.
 
+* Spelling mistakes can give you headach but I know my weaknes. 
+   * Patience to go over your lines gives results
+
+* By accidentally I deleted two times my all run.py coding. Very scary experience
+   * During my second project I went to Github and copied code from there. Lucky if its saved...
+   * Used Ctrl + Z this time. 
 
 ## Remaining Bugs
 
