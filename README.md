@@ -8,7 +8,7 @@ Hangman is an old school favorite, a word game where the goal is simply to find 
 
 You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
-![my-page](controllers/assets/images/my-app-image.png)
+![my-page](assets/images/my-app-image.png)
 
 
 # Table of Contents
@@ -24,9 +24,9 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 * Technology
 
 * Testing
-   * Bugs
    * Validator testing
-
+   * Bugs
+   
 * Deployment
 
 * Credits
@@ -54,29 +54,29 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
 ### Exsisting Features (with functions)
 
-![game start](controllers/assets/images/heroku-start-game.png)
+![game start](assets/images/heroku-start-game.png)
 
-![game-start](controllers/assets/images/heroku-start-welcome.png)
+![game-start](assets/images/heroku-start-welcome.png)
 
    * Display greeting , ASCKII art, user input for name 
       * def display_greeting()
 
-![game rules](controllers/assets/images/game-rules.png)
+![game rules](assets/images/game-rules.png)
  
    * Ask the player either display the rules or go for game
       * def display_rules()
    * Display rules
       * def rules_txt()
 
-![game categories](controllers/assets/images/heroku-category.png)
+![game categories](assets/images/heroku-category.png)
 
    * Display categories
    * User input for selecting category  
       * def category_select()
 
-![letters joice](controllers/assets/images/heroku-incorrect-right-letter.png)
+![letters joice](assets/images/heroku-incorrect-right-letter.png)
 
-![end image](controllers/assets/images/heroku-end-lost.png)
+![end image](assets/images/heroku-end-lost.png)
 
    * Ask the player to enter letters one at the time
    * if the player entered a letter which is right for the randomly selected word,
@@ -89,12 +89,12 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
       * def display_guess_message()
       * def display_alredy_used()
 
-![hurray](controllers/assets/images/heroku-end-winning.png)   
+![hurray](assets/images/heroku-end-winning.png)   
 
    * If user guessed all letters, display ASCII image - Hurray!  
       * def hangman()
 
-![game over](controllers/assets/images/game-over.png)  
+![game over](assets/images/game-over.png)  
    * end of game display image ASCII art 
    * ask the player would he like to play again or exit the game using keybord or Run Programm button above
    * user input what choice he made  
@@ -106,15 +106,15 @@ You can check out the live game [here](https://hangman-game1x.herokuapp.com/)
 
 Are created by using [ASCII art](http://patorjk.com/software/taag)
 
-![hangman greeting](controllers/assets/images/hangman-image.png)
+![hangman greeting](assets/images/hangman-image.png)
 
-![hurray](controllers/assets/images/hurray-image.png)
+![hurray](assets/images/hurray-image.png)
 
-![game over](controllers/assets/images/game-over-image.png)
+![game over](assets/images/game-over-image.png)
 
 Visual [hangman stages](https://enhancer298.net/2020/07/10/hangman1/)
 
-![hangman stages](controllers/assets/images/hangman.png)
+![hangman stages](assets/images/hangman.png)
 
 
 
@@ -138,10 +138,8 @@ Visual [hangman stages](https://enhancer298.net/2020/07/10/hangman1/)
 
 This is the flowchart made during the planning stage of the project. This flowchart has been used to visualise the functions and behaviour control during the building stage of the project.
 
-<details><summary>Flowchart</summary>
-
-![Flowchart](controllers/assets/images/hangman-flowchart.jpeg)
-</details>
+* Flowchart
+![Flowchart](assets/images/hangman-flowchart.jpeg)
 
 
 # Technology
@@ -159,13 +157,13 @@ This is the flowchart made during the planning stage of the project. This flowch
 
 * [Grammarly](https://app.grammarly.com/) used to fix the thousands of grammar errors across the project.
 
-* The Code Institute's GitHub full template for Python is used in order for the program to display properly in the deployed site on Heroku.
+* The Code Institute's GitHub full [template](https://github.com/Code-Institute-Org/python-essentials-template) for Python is used in order for the program to display properly in the deployed site on Heroku.
 
 * [random](https://docs.python.org/3/library/random.html) to randomize anagram
 
 * [time](https://docs.python.org/3/library/time.html) to slow down printed statements
 
-* Python 3 - an interpreted high-level general-purpose backend programming language.
+* [Python 3](https://www.python.org/) - an interpreted high-level general-purpose backend programming language.
 
 # Testing
 
@@ -174,28 +172,34 @@ I have manually tested this project by doing the following:
 * Passed the code through a PEP8 linter and confirmed, there are no problems (find under validator testing)
 * Give invalid inputs strings when numbers are expected, out of bound inputs, some inputs twice
 
-<details><summary>Only numbers</summary>
+Tested only numbers are promitted
 
-![only numbers](controllers/assets/images/only-numbers.png)
-</details>
+![only numbers](assets/images/only-numbers.png)
 
-<details><summary>Tested ASCII art printout</summary> 
+Tested ASCII art printout
 
-![ascii](controllers/assets/images/test-greeting-print.png)
-</details>
+![ascii](assets/images/test-greeting-print.png)
+
 
 * Tested in my local terminal and the Code Institute Heroku terminal
 * [Python tutor](https://pythontutor.com/visualize.html#mode=edit)
 
-<details><summary>Test sample</summary>
+Test sample
 
-![python-tutor](controllers/assets/images/pythontutor-image.png)
-</details>
+![python-tutor](assets/images/pythontutor-image.png)
 
-<details><summary>Lighthouse</summary>
+Lighthouse
 
-![lighthouse](controllers/assets/images/lighthouse-hangman.png)
-</details>
+![lighthouse](assets/images/lighthouse-hangman.png)
+
+## Validator Testings
+
+* [PEP8](http://pep8online.com/checkresult)
+    * No errors were returned from PEP8online.com
+
+PEP8 validator testing
+
+![pep8](assets/images/pep8online.png)  
 
 ## Bugs
 
@@ -235,15 +239,6 @@ evrything works well but not in Heroku. Im glad I chosed manual deployment.
 
 * No bugs remaining
 
-## Validator Testings
-
-* [PEP8](http://pep8online.com/checkresult)
-    * No errors were returned from PEP8online.com
-
-<details><summary>PEP8 validator testing</summary>
-
-![pep8](controllers/assets/images/pep8online.png) 
-</details>   
 
 # Deployment
 
