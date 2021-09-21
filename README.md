@@ -263,11 +263,6 @@ This project was deployed using Code Institute's mock terminal for Heroku. Pleas
 
 8. Go to section "Config Vars" and click button "Reveal Config Vars"
 
-<details><summary>Click to see it</summary>
-
-![config vars](controllers/assets/images/config-vars.png)
-</details>
-
 9. In the field for "KEY" enter "PORT"-  capital letters and value"8000" 
 
 10. Go to section "Build packs" and click "Add build pack"
@@ -276,11 +271,6 @@ This project was deployed using Code Institute's mock terminal for Heroku. Pleas
    * click "Add build pack" again
    * in this new window - click Node.js and "Save changes" [`heroku/NodeJS`]
    * take care to have those apps in this order: [`Python`] first, [`Node.js`] second, drag and drop if needed
-
-<details><summary>Click to see it</summary>
-
-![buildpacks](controllers/assets/images/buildpacks.png)
-</details>
 
 11. Next go to "Deploy" in the menu bar on the top
 
@@ -295,21 +285,11 @@ This project was deployed using Code Institute's mock terminal for Heroku. Pleas
 16. Scroll down to the section "Automatic Deploys"
 
 17. Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
-   * As I wanted to have control when to deploy the version, I have chosen manual deployment by pressing Deploy branch button instead of Enable Automatic Deploys
-
-<details><summary>Click to see it</summary>
-
-![deployment](controllers/assets/images/manual-deployment.png) 
-</details>  
+   * As I wanted to have control when to deploy the version, I have chosen manual deployment by pressing Deploy branch button instead of Enable Automatic Deploys 
 
 18. Click "Deploy branch"
 
 Once the program runs: you should see the message "the app was sussesfully deployed"
-
-<details><summary>Click to see it</summary>
-
-![deployed](controllers/assets/images/heroku-app.png)
-</details>
 
  19. Click the button "View". This View button will open the terminal game in the new window. Here is the deployed page [Hangman](https://hangman-game1x.herokuapp.com/)
 
