@@ -219,6 +219,8 @@ Image "Game over" is created using line art and it was impossible to solve
    * flake8(W605)
    * pylint(anomalous-backslash-in-string)
 
+![ascii art](assets/images/art-error1.png)
+
 * I used manual deployment to get to know more about deployment processes for study purposes.
 
 I forgot refresh deployment when I asked someone to play and they reflected things
