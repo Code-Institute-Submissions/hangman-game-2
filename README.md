@@ -327,7 +327,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 * Idea for [flowchart](http://inventwithpython.com/invent4thed/chapter7.html)
 
-* My mentor Tim Nelson for encouragin me throughout the project.
+* My mentor Tim Nelson for encouraging me throughout the project.
 
 * John at [CI Tutor support](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopmentecommerce/tutor) for his patience and pointing me in the right direction.
 

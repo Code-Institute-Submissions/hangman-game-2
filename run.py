@@ -23,7 +23,7 @@ stages = ['___________________',
           '|        / ＼      ',
           '|      THE END     ']
 
-# Setting the stage number to be used as limit for incorrect attempts
+# Setting the stage number to be used as a limit for incorrect attempts
 stage_num = len(stages)
 
 
@@ -51,7 +51,7 @@ def display_greeting():
 
 def display_rules():
     """
-    Ask user if game rules is need and displays game rules as requested
+    Ask user if game rules are needed and display game rules as requested
     """
     print("Do you want to know the game's rules?")
     rules_on = input("Press y if yes,"
@@ -71,7 +71,7 @@ def rules_txt():
     print("Here are rules on how to play \n"
           "1. Select a category\n"
           "2. The amount of  displayed Underscores '_' hints\n"
-          "   to the lenght of the word.\n"
+          "   to the length of the word.\n"
           "3. You need to guess the word\n"
           "   by entering one letter at a time.\n"
           "4. If your answer is correct, the letter will be displayed\n"
@@ -200,7 +200,7 @@ def display_alredy_used():
 
 def game_over():
     """
-    GAME OVER ascii art
+    GAME OVER ASCII art
     """
     # ASCII ART https://patorjk.com/software/taag
     print("   ___")
