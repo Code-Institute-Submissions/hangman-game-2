@@ -5,9 +5,9 @@ import time
 weather = ["climate", "isobar", "visibility",
            "showery", "unsettled", "rainbow"]
 irish_names = ["caoimhe", "saoirse", "clodagh",
-               "roisin", "eireann", "padraig"]
+               "roisin", "eireann", "padraig", "tadhg"]
 counties_of_ireland = ["limerick", "tipperary", "wexford",
-                       "donegal", "longford", "galway"]
+                       "donegal", "longford", "galway", "dublin"]
 drinks = ["tequila", "vermouth", "cognac",
           "whiskey", "water", "baileys"]
 
@@ -55,11 +55,11 @@ def display_rules():
     """
     print("Do you want to know the game's rules?")
     rules_on = input("Press y if yes,"
-                     "or any other key to play the game:\n")
+                     "or press enter to play the game:\n")
     if rules_on.lower() == "y":
         rules_txt()
         print("Are you ready to play?")
-        input("Press any key to start the game >> \n")
+        input("Press enter to start the game >> \n")
     else:
         pass
 
@@ -213,11 +213,12 @@ def game_over():
 def replay():
     print("Would you like to play again?")
     print("Enter y or press RUN PROGRAM button above to play again.\n"
-          "or press any other key to exit the game.")
+          "or press enter to exit the game.")
     play_again = input(
-        "Please press y to play, any other key to exit the game\n")
+        "Please press y to play or press enter to exit the game\n")
     if play_again.lower() == "y":
         hangman()
+
     else:
         print("Hope you enjoyed the game!")
 
