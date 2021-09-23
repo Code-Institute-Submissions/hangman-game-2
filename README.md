@@ -199,7 +199,7 @@ Lighthouse
 
 PEP8 validator testing
 
-![pep8](assets/images/pep8online.png)  
+![pep8](assets/images/PEP8-online.png)  
 
 ## Bugs
 
